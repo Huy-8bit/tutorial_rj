@@ -6,6 +6,11 @@ body {
     padding: 20px;
 }
 
+#root {
+    width: 100%;
+    max-width: 400px;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
