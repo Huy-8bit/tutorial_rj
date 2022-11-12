@@ -21,11 +21,23 @@ function App() {
       ...todoList,
     ]);
 
-    
+
     setTextInput("");
   },
    [textInput, todoList]
   );
+
+  const onCheckBtnClick = useCallback((id) => {
+    setTodoList([prevStates => prevStates.map((todo) => {
+      if(todo.id === id){
+        return {
+          ...todo,
+          isCommpeted: true !todo.isCommpeted,
+        };
+      }
+      return todo;
+    }
+  }, []);
 
   return (
     <>
