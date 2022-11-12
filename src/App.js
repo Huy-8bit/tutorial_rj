@@ -1,6 +1,8 @@
+import TodoList from "./components/TodoList";
+
 function App() {
   return (
-    <p>Day la todo app</p>
+    <TodoList />
   );
 }
 
